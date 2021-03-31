@@ -1,0 +1,53 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: 0;
+  transition: all 0.2s ease;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+body {
+  background-color: #111;
+  font-family: Arial;
+}
+
+.container {
+  position:relative;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+}
+
+.typer{
+  display:block;
+  color:#fff;
+}
+.typer::after {
+  content: '';
+  height: 100%;
+  padding: 2px;
+  margin-left: 10px;
+  background-color: #05ccc2;
+  animation: typing 1.2s ease infinite;
+}
+span.typed-cursor {
+  display:none;
+}
+
+
+@keyframes typing {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
