@@ -182,6 +182,8 @@ body {
   background-size: cover;
   position: relative;
   height: 100vh;
+  opacity: 0.2;
+
 }
 
 .banner-table {
